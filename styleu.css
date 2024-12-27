@@ -1,0 +1,180 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    background: linear-gradient(#06141b, #11212d, #253745, #4a5c6a);
+    height: 300vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header nav .logo {
+    width: 150px;
+}
+
+header nav .menu {
+    display: flex;
+    align-items: center;
+}
+
+nav .menu a {
+    color: #4a5c6a;
+    margin-left: 30px;
+    position: relative;
+}
+
+nav .menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ccd0cf;
+    transition: 0.4s;
+}
+
+nav .menu a:hover::after {
+    width: 100%;
+}
+
+nav .social a i {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+nav .social a i:hover {
+    transform: scale(1.3);
+    color: #4a5c6a;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .text {
+    width: 90%;
+    margin: auto;
+}
+
+.hero .text h4 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hero .text h1 {
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.hero .text h1 span {
+    color: #9ba8ab;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.hero .text p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.ul {
+    color: #fff;
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: center;
+}
+
+.story {
+    width: 100%;
+    min-height: 70vh;
+
+    text-align: center;
+}
+
+.story .text h1 {
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.story .text h1 span {
+    color: #9ba8ab;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.story .text {
+    width: 90%;
+    margin: auto;
+}
+
+.story .text p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.ul li {
+    color: #ccd0cf;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team {
+    width: 100%;
+    min-height: 20vh;
+    text-align: center;
+
+}
+
+.team a {
+    color: #06141b;
+}
+
+.team a i {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.team a i:hover {
+    color: #11212d;
+
+}
